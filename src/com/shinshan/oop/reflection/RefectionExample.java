@@ -1,5 +1,7 @@
 package com.shinshan.oop.reflection;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.lang.Class;
 import java.lang.reflect.*;
 
@@ -45,6 +47,8 @@ class RefectionExample {
             int fieldModifiers = salaryRefField.getModifiers();
             String modifierName = Modifier.toString(fieldModifiers);
             System.out.format("  salary 필드의 접근 지정자는 %s  \n", modifierName);
+            InputStream  to = new FileInputStream("aaa");
+            to.read();
         } catch (Exception e) {
             e.printStackTrace();
         }

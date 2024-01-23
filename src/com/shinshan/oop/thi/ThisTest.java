@@ -14,8 +14,7 @@ class Circle2 {
                 radius, getArea());
         return this;
     }
-}
-class ThisTest{
+}class ThisTest{
     public static void main(String args[]){
         Circle2 circle = new Circle2();
         circle.setRadius(2).display().setRadius(3).display();
